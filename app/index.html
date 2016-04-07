@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Version of Stock Watch</title>
+    <meta name="description" content="Stock watch uses markitondemand api to lookup stock details. This is a version of the app written using Angular">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="angularBoilerplateApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="header">
+      <div class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#/">Stock Watch</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            <ul class="nav navbar-nav pull-right">
+              <li class="active"><a href="#/">Home</a></li>
+              <li><a ng-href="#/history">History</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div ng-view=""></div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="col-xs-12 text-center">
+          <ul class="list-inline">
+            <li><a href="https://www.facebook.com/Ratracegrad"><i class="fa fa-facebook fa-2x"></i></a></li>
+            <li><a href="https://twitter.com/ratracegrad"><i class="fa fa-twitter fa-2x"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ratracegrad"><i class="fa fa-linkedin fa-2x"></i></a></li>
+            <li><a href="https://github.com/ratracegrad"><i class="fa fa-github fa-2x"></i></a></li>
+            <li><a href="http://www.jenniferbland.com/"><i class="fa fa-home fa-2x"></i></a></li>
+          </ul>
+
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/history.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

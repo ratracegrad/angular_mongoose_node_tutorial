@@ -1,0 +1,42 @@
+<div class="col-xs-12 col-md-4 col-md-offset-4 stockBox">
+
+  <h1 class="text-center homeTitle text-success">Stock Watch</h1>
+
+  <form class="form-inline text-center getStock">
+    <div class="form-group">
+      <input type="text" name="stockSymbol" class="form-control text-left" id="stockSymbol" required>
+    </div>
+    <button type="submit" class="btn btn-success" id="stockLookup">Lookup Stock</button>
+  </form>
+
+  <table class="table">
+    <tbody class="table-striped">
+    <tr>
+      <td class="text-left"> Name </td>
+      <td class="text-right text-muted"><span id="stockName"></span></td>
+    </tr>
+    <tr>
+      <td class="text-left"> Symbol </td>
+      <td class="text-right text-muted"><span id="symbol"></span></td>
+    </tr>
+    <tr>
+      <td class="text-left"> Last Price </td>
+      <td class="text-right text-muted"><span id="stockLastPrice"></span></td>
+    </tr>
+    <tr>
+      <td class="text-left"> High </td>
+      <td class="text-right text-muted"><span id="stockHigh"></span></td>
+    </tr>
+    <tr>
+      <td class="text-left"> Low </td>
+      <td class="text-right text-muted"><span id="stockLow"></span></td>
+    </tr>
+    <tr>
+      <td class="text-left"> Volume </td>
+      <td class="text-right text-muted"><span id="stockVolume"></span></td>
+    </tr>
+    </tbody>
+
+  </table>
+
+</div><!--/col-12-->
